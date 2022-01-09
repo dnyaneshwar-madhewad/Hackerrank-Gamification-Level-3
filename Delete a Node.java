@@ -1,4 +1,4 @@
-Delete a Node
+/*Delete a Node
 Problem Statement :
 
 Delete the node at a given position in a linked list and return a reference to the head node. 
@@ -33,7 +33,7 @@ The last line contains an integer, position, the position of the node to delete.
 Constraints:
      1.  1<=n<=1000
      2.  1<=list[i]<=1000
-------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------*/
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -150,7 +150,7 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-------------------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------------------
 
 Test Cast 0:
 Congratulations, you passed the sample test case.
@@ -191,3 +191,4 @@ Your Output (stdout)
 
 Expected Output
 11 2 9
+*/
