@@ -84,28 +84,30 @@ public class Solution {
             this.tail = node;
         }
     }
+ 
+ 
 
-    public static void printSinglyLinkedList(SinglyLinkedListNode node, String sep, BufferedWriter bufferedWriter) throws IOException {
-        while (node != null) {
-            bufferedWriter.write(String.valueOf(node.data));
+    class Result {
 
-            node = node.next;
-
-            if (node != null) {
-                bufferedWriter.write(sep);
-            }
+    public static SinglyLinkedListNode reverse(SinglyLinkedListNode llist) {
+    // Write your code here
+        static SinglyLinkedListNode reverse(SinglyLinkedListNode head) {
+        SinglyLinkedListNode next = null;
+        SinglyLinkedListNode current = head;
+        SinglyLinkedListNode previous = null;
+        while(current!=null)
+        {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
         }
+        SinglyLinkedListNode singlyLinkedListNode = previous;
+        return singlyLinkedListNode;
     }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    }
+
+}
   
    private static final Scanner scanner = new Scanner(System.in);
 
